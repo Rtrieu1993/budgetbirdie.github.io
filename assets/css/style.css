@@ -1,81 +1,63 @@
+h1, h2 {
+  color: #c0c0c0; /* Set font color */
+  font-family: Georgia, serif; /* Set font family */
+  font-weight: bold; /* Make font bold */
+}
+
 body {
-    margin: 40px;
-  }
-  
-  .sidebar {
-      grid-area: sidebar;
-    }
-  
-    .sidebar2 {
-      grid-area: sidebar2;
-    }
-  
-    .content {
-      grid-area: content;
-    }
-  
-    .header {
-      grid-area: header;
-    }
-  
-    .footer {
-      grid-area: footer;
-    }
-  
-    .wrapper {
-      background-color: #fff;
-      color: #444;
-    }
-  
-    .wrapper {
-      display: grid;
-      grid-gap: 1em;
-      grid-template-areas:
-       "header"
-       "sidebar"
-       "content"
-       "sidebar2"
-       "footer"
-    }
-  
-    @media only screen and (min-width: 500px)  {
-    .wrapper {
-  
-      grid-template-columns: 20% auto;
-      grid-template-areas:
-      "header   header"
-      "sidebar  content"
-      "sidebar2 sidebar2"
-      "footer   footer";
-    }
-    }
-  
-    @media only screen and (min-width: 600px)   {
-      .wrapper {
-        grid-gap: 20px;
-        grid-template-columns: 120px auto 120px;
-        grid-template-areas:
-        "header  header  header"
-        "sidebar content sidebar2"
-        "footer  footer  footer";
-        max-width: 600px;
-      }
-    }
-  
-  .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 150%; 
-  }
-  
-  .header,
-  .footer {
-    background-color: #999;
-  }
-  
-  .sidebar2 {
-    background-color: #ccc;
-    color: #444;
-  }
+  background-color: #fffafa; /* Background color */
+  font-family: Georgia, serif; /* Font family */
+  text-align: center; /* Center text */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; 
+}
+
+select {
+  background-color: rgba(254, 243, 240, 0.8); 
+  border: 2px solid #d4e2d4; 
+  border-radius: 10px; 
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2), 
+              inset 0 -2px 5px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 16px;
+  color: #333; 
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none; 
+}
+
+input[type="number"], 
+input[type="date"], 
+select {
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(212, 226, 212, 0.5); /* Transparent background */
+    padding: 10px; /* Padding for better appearance */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5); /* Inner shadow effect */
+    transition: all 0.3s; /* Smooth transition for focus effect */
+}
+
+input[type="number"]:focus, 
+input[type="date"]:focus, 
+select:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.7); /* Darker inner shadow on focus */
+}
+
+button {
+  border: none; /* Remove default border */
+  border-radius: 20px; /* Rounded edges */
+  background-color: #c1ffd7; /* Button background color */
+  color: #c0c0c0; /* Font color */
+  font-family: 'Marker Felt', fantasy; /* Font family */
+  padding: 10px 20px; /* Padding for better appearance */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #b0e0b0; /* Change background color on hover */
+}

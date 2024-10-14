@@ -60,6 +60,87 @@
 <div class="expenses-list"></div>
 <h2>Expenses List</h2>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const expensesTableBody = document.getElementById('expenses-table-body');
+
+        // Function to add a new expense row
+        function addExpense(category, amount, date) {
+            const row = document.createElement('tr');
+
+            row.innerHTML = `
+                <td>${category}</td>
+                <td>${amount}</td>
+                <td>${date}</td>
+                <td><button class="delete-btn">Delete</button></td>
+            `;
+
+            expensesTableBody.appendChild(row);
+        }
+
+        // Event listener for the Add button
+        document.getElementById('add-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const category = document.getElementById('category-select').value;
+            const amount = document.getElementById('amount-input').value;
+            const date = document.getElementById('date-input').value;
+
+            if (category && amount && date) {
+                addExpense(category, amount, date);
+            }
+        });
+
+        // Event delegation for delete buttons
+        expensesTableBody.addEventListener('click', function (event) {
+            if (event.target.classList.contains('delete-btn')) {
+                const row = event.target.closest('tr');
+                expensesTableBody.removeChild(row);
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const expensesTableBody = document.getElementById('expenses-table-body');
+
+        // Function to add a new expense row
+        function addExpense(category, amount, date) {
+            const row = document.createElement('tr');
+
+            row.innerHTML = `
+                <td>${category}</td>
+                <td>$${amount}</td>
+                <td>${date}</td>
+                <td><button class="delete-btn">Delete</button></td>
+            `;
+
+            expensesTableBody.appendChild(row);
+        }
+
+        // Event listener for the Add button
+        document.getElementById('add-btn').addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const category = document.getElementById('category-select').value;
+            const amount = document.getElementById('amount-input').value;
+            const date = document.getElementById('date-input').value;
+
+            if (category && amount && date) {
+                addExpense(category, amount, date);
+            }
+        });
+
+        // Event delegation for delete buttons
+        expensesTableBody.addEventListener('click', function (event) {
+            if (event.target.classList.contains('delete-btn')) {
+                const row = event.target.closest('tr');
+                expensesTableBody.removeChild(row);
+            }
+        });
+    });
+</script>
 <table>
     <thead>
         <tr>

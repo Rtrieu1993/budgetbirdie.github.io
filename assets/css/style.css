@@ -1,14 +1,21 @@
 h1, h2 {
-  color: #c0c0c0; /* Set font color */
-  font-family: Georgia, serif; /* Set font family */
-  font-weight: bold; /* Make font bold */
+  color: #48bdb6; 
+  font-family: Georgia, serif; 
+  font-weight: bold; 
+  background-color: #fffafa;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center; /* Center text within the headers */
+    margin: 10px; /* Margin between headers */
 }
 
 body {
-  background-color: #fffafa; /* Background color */
-  font-family: Georgia, serif; /* Font family */
-  text-align: center; /* Center text */
-  height: 100vh; /* Full height of the viewport */
+  font-family: 'Marker Felt', fantasy;
+  color: #696969;
+  background-color: #dddddd; 
+  text-align: center; 
+  align-items: center;
+  height: 100vh; 
   margin: 0; 
 }
 
@@ -32,32 +39,62 @@ input[type="number"],
 input[type="date"], 
 select {
     border: none;
-    border-radius: 15px; /* Rounded corners */
-    background-color: rgba(212, 226, 212, 0.5); /* Transparent background */
-    padding: 10px; /* Padding for better appearance */
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5); /* Inner shadow effect */
-    transition: all 0.3s; /* Smooth transition for focus effect */
+    border-radius: 15px; 
+    background-color: rgba(212, 226, 212, 0.5); 
+    padding: 10px; 
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5); 
+    transition: all 0.3s; 
 }
 
 input[type="number"]:focus, 
 input[type="date"]:focus, 
 select:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.7); /* Darker inner shadow on focus */
+    outline: none; 
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.7); 
 }
 
 button {
-  border: none; /* Remove default border */
-  border-radius: 20px; /* Rounded edges */
-  background-color: #c1ffd7; /* Button background color */
-  color: #c0c0c0; /* Font color */
-  font-family: 'Marker Felt', fantasy; /* Font family */
-  padding: 10px 20px; /* Padding for better appearance */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  border: none; 
+  border-radius: 20px; 
+  background-color: #c1ffd7; 
+  color: #c0c0c0; 
+  font-family: 'Marker Felt', fantasy; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
 }
 
 button:hover {
-  background-color: #b0e0b0; /* Change background color on hover */
+  background-color: #b0e0b0;
+}
+
+table {
+  border-collapse: separate;
+  border-radius: 10px; /* Rounded edges */
+  border: 2px solid #c1ffd7; /* Table border color */
+  width: 80%; /* Table width */
+  background-color: #41bbc5; /* Table background color */
+  margin: auto;
+}
+
+thead {
+  background-color: #d4e2d4; /* Header background color */
+  border-radius: 10px; /* Rounded edges for the header */
+    /* Adding a matte finish effect */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+th {
+  color: #808080; /* Font color for headers */
+  font-family: 'Georgia', serif; /* Font family */
+  text-align: center; /* Center text in headers */
+  padding: 10px; /* Padding for headers */
+  border-radius: 10px; /* Rounded edges for each header cell */
+}
+
+td {
+  text-align: center; /* Center text in table data */
+  padding: 10px; /* Padding for table data */
+  color: #2f4f4f; /* Font color for table data */
 }

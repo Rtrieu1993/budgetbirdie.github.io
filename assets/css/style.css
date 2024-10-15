@@ -1,145 +1,111 @@
 h1, h2 {
-  color: #48bdb6; 
-  font-family: Georgia, serif; 
-  font-weight: bold; 
+  color: #48bdb6;
+  font-family: Georgia, serif;
+  font-weight: bold;
   background-color: #fffafa;
   border-radius: 10px;
   padding: 10px;
-  text-align: center; 
-    margin: 10px; 
+  text-align: center;
+    margin: 10px;
 }
-
 body {
   font-family: 'Marker Felt', fantasy;
   color: #696969;
-  background-color: #dddddd; 
-  text-align: center; 
+  background-color: #dddddd;
+  text-align: center;
   align-items: center;
-  height: 100vh; 
-  margin: 0; 
+  height: 100vh;
+  margin: 0;
 }
-
 select {
-  background-color: rgba(254, 243, 240, 0.8); 
-  border: 2px solid #d4e2d4; 
-  border-radius: 10px; 
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2), 
+  background-color: rgba(254, 243, 240, 0.8);
+  border: 2px solid #d4e2d4;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2),
               inset 0 -2px 5px rgba(255, 255, 255, 0.5);
   padding: 10px;
   font-size: 16px;
-  color: #333; 
+  color: #333;
   cursor: pointer;
 }
-
 select::-ms-expand {
-  display: none; 
+  display: none;
 }
-
-input[type="number"], 
-input[type="date"], 
+input[type="number"],
+input[type="date"],
 select {
     border: none;
-    border-radius: 15px; 
-    background-color: rgba(212, 226, 212, 0.5); 
-    padding: 10px; 
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5); 
-    transition: all 0.3s; 
+    border-radius: 15px;
+    background-color: rgba(212, 226, 212, 0.5);
+    padding: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
 }
-
-input[type="number"]:focus, 
-input[type="date"]:focus, 
+input[type="number"]:focus,
+input[type="date"]:focus,
 select:focus {
-    outline: none; 
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.7); 
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
 }
-
 button {
-  border: none; 
-  border-radius: 20px; 
-  background-color: #c1ffd7; 
-  color: #c0c0c0; 
-  font-family: 'Marker Felt', fantasy; 
-  padding: 10px 20px; 
-  font-size: 16px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  border: none;
+  border-radius: 20px;
+  background-color: #c1ffd7;
+  color: #c0c0c0;
+  font-family: 'Marker Felt', fantasy;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-
 button:hover {
   background-color: #b0e0b0;
 }
-
 table {
   border-collapse: separate;
-  border-radius: 10px; 
-  border: 2px solid #c1ffd7; 
-  width: 80%; 
-  background-color: #41bbc5; 
+  border-radius: 10px;
+  border: 2px solid #c1ffd7;
+  width: 80%;
+  background-color: #41bbc5;
   margin: auto;
 }
-
 thead {
-  background-color: #d4e2d4; 
-  border-radius: 10px; 
+  background-color: #d4e2d4;
+  border-radius: 10px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
 tbody tr {
-  counter-increment: rowNumber; 
+  counter-increment: rowNumber;
 }
-
 tbody tr td:first-child::before {
-  content: counter(rowNumber); 
-  margin-right: 10px; 
-  font-weight: bold; 
-  color: #333; 
+  content: counter(rowNumber);
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
 }
-
 th {
-  color: #808080; 
-  font-family: 'Georgia', serif; 
-  text-align: center; 
-  padding: 10px; 
-  border-radius: 10px; 
+  color: #808080;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
-
 td {
-  text-align: center; 
-  padding: 10px; 
-  color: #2f4f4f; 
+  text-align: center;
+  padding: 10px;
+  color: #2f4f4f;
 }
-
 td .delete-button {
-  border: none; 
-  border-radius: 10px; 
-  background-color: #ff6b6b; 
-  color: white; 
-  font-family: 'Marker Felt', fantasy; 
-  padding: 5px 10px; 
-  font-size: 14px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  border: none;
+  border-radius: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  font-family: 'Marker Felt', fantasy;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-
 td .delete-button:hover {
-  background-color: #ff4c4c;
-}
-
-
-.clear-table-button {
-  border: none; 
-  border-radius: 20px; 
-  background-color: #ff6b6b; 
-  color: white; 
-  font-family: 'Marker Felt', fantasy; 
-  padding: 10px 20px; 
-  font-size: 16px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
-  display: block;
-  margin: 20px auto;
-}
-
-.clear-table-button:hover {
   background-color: #ff4c4c;
 }

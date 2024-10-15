@@ -109,3 +109,97 @@ td .delete-button {
 td .delete-button:hover {
   background-color: #ff4c4c;
 }
+
+
+.clear-table-button {
+  border: none; 
+  border-radius: 20px; 
+  background-color: #ff6b6b; 
+  color: white; 
+  font-family: 'Marker Felt', fantasy; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  display: block;
+  margin: 20px auto;
+}
+
+.clear-table-button:hover {
+  background-color: #ff4c4c;
+}
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+   'header header header'
+   'sidebar content sidebar2'
+   'footer footer footer';
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: auto 1fr auto;
+   gap: 20px;
+   height: 100vh;
+   padding: 10px;
+}
+
+header {
+  grid-area: footer;
+  background-color: lightgreen;
+  margin-top: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightgreen;
+  color: black;
+  padding: 10px;
+  margin-right: 20px;
+}
+.content {
+  grid-area: content;
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+  background-color: lightgreen;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.box-content {
+  background-color: lightblue;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.box-sidebar {
+  background-color: lightgreen;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 30px 30vh;
+  margin-right: 15px;
+ background-color: none;
+}

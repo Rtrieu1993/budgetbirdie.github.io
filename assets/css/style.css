@@ -110,7 +110,6 @@ td .delete-button:hover {
   background-color: #ff4c4c;
 }
 
-
 .clear-table-button {
   border: none; 
   border-radius: 20px; 
@@ -127,9 +126,6 @@ td .delete-button:hover {
 
 .clear-table-button:hover {
   background-color: #ff4c4c;
-}
-
- {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

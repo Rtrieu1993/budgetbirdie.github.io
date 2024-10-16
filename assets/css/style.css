@@ -199,3 +199,9 @@ nav ul a {
   margin-right: 15px;
  background-color: none;
 }
+
+.h1c {
+  display: grid;
+  place-items: center;
+  height: 100px;      
+}

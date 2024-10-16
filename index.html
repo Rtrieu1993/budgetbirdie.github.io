@@ -8,9 +8,84 @@
 
 <body>
     <header>Birdie Budget Tracker.</header>
+   
     <div class="sidebar">Sidebar<div class="box-sidebar"></div></div>
-    <div class="content">Content<div class="box-content"></div></div>
-    <div class="sidebar2">Sidebar 2<div class="box-sidebar"></div></div>
+   
+    <div class="content">
+        <div class="input-section">
+            <form>
+            <label for="category-select">Category:</label>
+            <select id="category-select">
+                <option value="Going Out To Eat">Going Out To Eat</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Commute">Commute</option>
+                <option value="Personal Spending">Personal Spending</option>
+                <option value="Cell Phone Bill">Cell Phone Bill</option>
+                <option value="Rent">Rent</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Car Payment">Car Payment</option>
+                <option value="Household Supplies">Household Supplies</option>
+                <option value="Leisure Activites">Leisure Activities</option>
+                <option value="Savings">Savings</option>
+                <option value="Student Loan Payment">Student Loan Payment</option>
+                <option value="Car Insurance">Car Insurance</option>
+                <option value="Renters Insurance">Renters Insurance</option>
+                <option value="Health Insurance">Health Insurance</option>
+                <option value="Investments">Investments</option>
+                <option value="Credit Card Payment">Credit Card Payment</option>
+                <option value="Streaming Services">Streaming Services</option>
+            </select>
+            <label for="amount-input">Amount:</label>
+            <input type="number" id="amount-input">
+            <label for="date-input">Date:</label>
+            <input type="date" id="date-input">
+            <button id="add-btn">Add</button>
+        </div>
+    </form>
+    <div class="expenses-list"></div>
+    <h2>Expenses List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+    
+            </tr>
+        </thead>
+        <tbody id="expenses-table-body">
+        </tbody>
+    </table>
+    <div class="total-amount">
+        <strong>Total:</strong> $<span id="total-amount">0</span>
+    </div>
+        <!------ Expense tracker ----- Filter Total------->
+        <div class="filter">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                    <option value="Going Out To Eat">Going Out To Eat</option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Commute">Commute</option>
+                    <option value="Personal Spending">Personal Spending</option>
+                    <option value="Cell Phone Bill">Cell Phone Bill</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Car Payment">Car Payment</option>
+                    <option value="Household Supplies">Household Supplies</option>
+                    <option value="Leisure Activites">Leisure Activities</option>
+                    <option value="Savings">Savings</option>
+                    <option value="Student Loan Payment">Student Loan Payment</option>
+                    <option value="Car Insurance">Car Insurance</option>
+                    <option value="Renters Insurance">Renters Insurance</option>
+                    <option value="Health Insurance">Health Insurance</option>
+                    <option value="Investments">Investments</option>
+                    <option value="Credit Card Payment">Credit Card Payment</option>
+                    <option value="Streaming Services">Streaming Services</option>
+            </select>
+        </div>
+    </div>
+        <div class="sidebar2">Sidebar 2<div class="box-sidebar"></div></div>
 </body>
 
 </html>
@@ -27,80 +102,10 @@
         </ul>
     </nav>
 </header>
+<div class="h1c">
 <h1>Birdie Budget Tracker</h1>
+</div>
 <form action="">
-    <div class="input-section">
-        <label for="category-select">Category:</label>
-        <select id="category-select">
-            <option value="Going Out To Eat">Going Out To Eat</option>
-            <option value="Groceries">Groceries</option>
-            <option value="Commute">Commute</option>
-            <option value="Personal Spending">Personal Spending</option>
-            <option value="Cell Phone Bill">Cell Phone Bill</option>
-            <option value="Rent">Rent</option>
-            <option value="Utilities">Utilities</option>
-            <option value="Car Payment">Car Payment</option>
-            <option value="Household Supplies">Household Supplies</option>
-            <option value="Leisure Activites">Leisure Activities</option>
-            <option value="Savings">Savings</option>
-            <option value="Student Loan Payment">Student Loan Payment</option>
-            <option value="Car Insurance">Car Insurance</option>
-            <option value="Renters Insurance">Renters Insurance</option>
-            <option value="Health Insurance">Health Insurance</option>
-            <option value="Investments">Investments</option>
-            <option value="Credit Card Payment">Credit Card Payment</option>
-            <option value="Streaming Services">Streaming Services</option>
-        </select>
-        <label for="amount-input">Amount:</label>
-        <input type="number" id="amount-input">
-        <label for="date-input">Date:</label>
-        <input type="date" id="date-input">
-        <button id="add-btn">Add</button>
-    </div>
-</form>
-<div class="expenses-list"></div>
-<h2>Expenses List</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Category</th>
-            <th>Amount</th>
-            <th>Date</th>
-
-        </tr>
-    </thead>
-    <tbody id="expenses-table-body">
-    </tbody>
-</table>
-<div class="total-amount">
-    <strong>Total:</strong> $<span id="total-amount">0</span>
-</div>
-</div>
-<!------ Expense tracker ----- Filter Total------->
-<div class="filter">
-    <label for="filter-category">Filter by Category:</label>
-    <select id="filter-category">
-        <option value="All">All</option>
-            <option value="Going Out To Eat">Going Out To Eat</option>
-            <option value="Groceries">Groceries</option>
-            <option value="Commute">Commute</option>
-            <option value="Personal Spending">Personal Spending</option>
-            <option value="Cell Phone Bill">Cell Phone Bill</option>
-            <option value="Rent">Rent</option>
-            <option value="Utilities">Utilities</option>
-            <option value="Car Payment">Car Payment</option>
-            <option value="Household Supplies">Household Supplies</option>
-            <option value="Leisure Activites">Leisure Activities</option>
-            <option value="Savings">Savings</option>
-            <option value="Student Loan Payment">Student Loan Payment</option>
-            <option value="Car Insurance">Car Insurance</option>
-            <option value="Renters Insurance">Renters Insurance</option>
-            <option value="Health Insurance">Health Insurance</option>
-            <option value="Investments">Investments</option>
-            <option value="Credit Card Payment">Credit Card Payment</option>
-            <option value="Streaming Services">Streaming Services</option>
-    </select>
-</div>
 
 <script src="assets/budget.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -131,7 +131,7 @@ td .delete-button:hover {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   display: grid;
   grid-template-areas:
    'header header header'
@@ -198,4 +198,4 @@ nav ul a {
   padding: 30px 30vh;
   margin-right: 15px;
  background-color: none;
-}
+} */

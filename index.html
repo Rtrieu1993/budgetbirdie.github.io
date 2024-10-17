@@ -27,11 +27,12 @@
         </ul>
     </nav>
 </header>
+<!------ Expense tracker ------------>
 <h1>Birdie Budget Tracker</h1>
 <form action="">
     <div class="input-section">
         <label for="category-select">Category:</label>
-        <select id="category-select">
+        <select id="category-select" required><option value="" disabled selected>Select a category</option>
             <option value="Going Out To Eat">Going Out To Eat</option>
             <option value="Groceries">Groceries</option>
             <option value="Commute">Commute</option>
@@ -52,7 +53,7 @@
             <option value="Streaming Services">Streaming Services</option>
         </select>
         <label for="amount-input">Amount:</label>
-        <input type="number" id="amount-input">
+        <input type="number" id="amount-input" placeholder="Amount($)" required />
         <label for="date-input">Date:</label>
         <input type="date" id="date-input">
         <button id="add-btn">Add</button>
@@ -64,7 +65,7 @@
     <thead>
         <tr>
             <th>Category</th>
-            <th>Amount</th>
+            <th>($)Amount</th>
             <th>Date</th>
 
         </tr>
@@ -101,7 +102,7 @@
             <option value="Streaming Services">Streaming Services</option>
     </select>
 </div>
-
+<!--END---- Expense tracker ----- Filter Total-----END-->
 <script src="assets/budget.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

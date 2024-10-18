@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalAmount = document.getElementById("total-amount");
     const filterCategory = document.getElementById("filter-category");
     const expensesTableBody = document.getElementById('expenses-table-body');
-    const expenses = JSON.parse(localStorage.getItem('expenses')) || [];
+    let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
 
 
     // Event listener for the Add button
@@ -23,15 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
         amountColumn.textContent = amount;
         dateColumn.textContent = date;
 
-                // Validate amount
-                if (isNaN(amount) || amount.trim() === "") {
-                    alert("Please enter a valid number for the amount.");
-                    return;
-                }
+        // Validate amount
+        if (isNaN(amount) || amount.trim() === "") {
+            alert("Please enter a valid number for the amount.");
+            updateTotalAmount();
+            return;
+        }
 
-                const expense = { id: Date.now(), category: description, amount: parseFloat(amount), date: date };
-                expenses.push(expense);
-                localStorage.setItem('expenses', JSON.stringify(expenses));
+        const expense = { id: Date.now(), category: description, amount: parseFloat(amount), date: date };
+        expenses.push(expense);
+        localStorage.setItem('expenses', JSON.stringify(expenses));
 
         displayExpenses(expenses);
         updateTotalAmount();
@@ -53,12 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Function that clear the table
-    const clearButton = document.createElement('button');
-    clearButton.textContent = 'Clear Table';
-    clearButton.id = 'clear-btn';
-    document.querySelector('thead tr').appendChild(clearButton);
-    clearButton.addEventListener('click', function () {
-        tableBody.innerHTML = '';
+    const clearButton=document.getElementById('clear-btn');
+    clearButton.addEventListener('click', function (event) {
+        console.log("Clear button clicked");
+        localStorage.setItem("expenses", JSON.stringify([]));
+        expenses = [];
+        displayExpenses(expenses);
+        updateTotalAmount();
+        form.reset();
     });
 
 
@@ -123,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </td>
             `;
             expensesTableBody.appendChild(row);
+            updateTotalAmount();
         });
     }
 
@@ -136,8 +140,8 @@ document.addEventListener("DOMContentLoaded", () => {
         totalAmount.textContent = total.toFixed(2);
         console.log(amounts);
     }
-        // Initial load of expenses from local storage
-        displayExpenses(expenses);
-        updateTotalAmount();
+    // Initial load of expenses from local storage
+    displayExpenses(expenses);
+    updateTotalAmount();
 
 });

@@ -1,0 +1,139 @@
+h1, h2 {
+    color: #48bdb6;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    background-color: #fffafa;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+      margin: 10px;
+  }
+  body {
+    font-family: 'Marker Felt', fantasy;
+    background-image: url(/assets/css/images/budgetbirdiebackground.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:top;
+    color:cdfbec;
+    background-color: #dddddd;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+ 
+  
+   body {
+    display: grid;
+    grid-template-areas:
+     'header header header'
+     'sidebar content sidebar2'
+     'footer footer footer';
+     grid-template-columns: 1fr 2fr 1fr;
+     grid-template-rows: auto 1fr auto;
+     gap: 20px;
+     height: 100vh;
+     padding: 10px;
+     
+     .poppins-light {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .poppins-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+  }
+  
+  header {
+    grid-area: header;
+    background-color: lightgreen;
+    margin-top: 300px;
+    text-align:justify;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: lightgreen;
+    color: black;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  .content {
+    grid-area: content;
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+  }
+  
+  .sidebar2 {
+    grid-area: sidebar2;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  
+  .box-content {
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .box-sidebar {
+    background-color: lightgreen;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #030303;
+    border-radius: 10px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-wrap:nowrap;
+  }
+  header nav ul li{
+    display:inline-block;
+    margin-left: auto;
+  }
+  
+  header nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 30px 30vh;
+    margin-right: 15px;
+   background-color: none;
+   text-align:center
+  }
+  
+  nav li a:hover {
+    color: #ff5100;
+    
+  }
+  
+  
+  .h1c {
+    display: grid;
+    place-items: center;
+    height: 100px;      
+  }
+  
+  .h1c {
+    display: grid;
+    place-items: center;
+    height: 100px;      
+  }
+  

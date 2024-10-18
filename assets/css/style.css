@@ -168,9 +168,9 @@ td .delete-button:hover {
 }
 
 header {
-  grid-area: footer;
+  grid-area: header;
   background-color: lightgreen;
-  margin-top: 20px;
+  margin-top: 300px;
 }
 
 .sidebar {
@@ -210,18 +210,30 @@ header {
   border-radius: 10px;
 }
 
-nav ul {
+header nav ul {
   list-style-type: none;
   padding: 0;
+  text-wrap:nowrap;
+}
+header nav ul li{
+  display:inline-block;
+  margin-left: auto;
 }
 
-nav ul a {
+header nav ul a {
   text-decoration: none;
   color: black;
   padding: 30px 30vh;
   margin-right: 15px;
  background-color: none;
+ text-align:center
 }
+
+nav li a:hover {
+  color: #ff5100;
+  
+}
+
 
 .h1c {
   display: grid;

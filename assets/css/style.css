@@ -14,7 +14,7 @@ body {
   background-size:100%;
   background-repeat: no-repeat;
   background-position:top;
-  color:cdfbec;
+  color: black;
   background-color: #dddddd;
   text-align: center;
   align-items: center;
@@ -144,6 +144,7 @@ td .delete-button:hover {
    grid-template-columns: 1fr 2fr 1fr;
    grid-template-rows: auto 1fr auto;
    gap: 20px;
+   column-gap: 20px;
    height: 100vh;
    padding: 10px;
    
@@ -170,7 +171,9 @@ td .delete-button:hover {
 header {
   grid-area: header;
   background-color: lightgreen;
-  margin-top: 300px;
+  margin-top: 375px;
+  text-align:justify;
+  font-size: 24px;
 }
 
 .sidebar {
@@ -182,16 +185,28 @@ header {
 }
 .content {
   grid-area: content;
+  height: fit-content;
   background-color: lightblue;
   color: black;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .sidebar2 {
+  list-style-type: none;
   grid-area: sidebar2;
   background-color: lightgreen;
   padding: 10px;
   margin-left: 20px;
+  color:#000000;
+  font-size: 24px;
+}
+
+.sidebar2 div li{
+margin-bottom: 30px;
+text-align: left;
+font-family: Arial, Helvetica, sans-serif;
+font-size: auto px;
 }
 
 .box-content {
@@ -245,4 +260,17 @@ nav li a:hover {
   display: grid;
   place-items: center;
   height: 100px;      
+}
+
+footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: -320px;
+  color:#383838;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  /* background-color: lightgreen; */
+  margin-bottom: 300px;
 }

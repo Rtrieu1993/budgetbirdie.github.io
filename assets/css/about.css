@@ -59,7 +59,7 @@ h1, h2 {
   header {
     grid-area: header;
     background-color: lightgreen;
-    margin-top: 300px;
+    margin-top: 375px;
     text-align:justify;
   }
   

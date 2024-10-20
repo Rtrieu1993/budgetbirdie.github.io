@@ -222,8 +222,20 @@ header {
   padding: 10px;
   /* margin-top: auto; */
   margin-bottom: auto;
-
+  text-wrap: nowrap;
+  font-size:24px;
 }
+.content input {
+  width: 15%;
+  height: 40px;
+  font-size: 16px;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #808080;
+}
+
+
+
 
 .sidebar2 {
   list-style-type: none;

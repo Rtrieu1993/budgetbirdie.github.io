@@ -43,51 +43,23 @@
                 page, which provides additional information about the website!  </p>
             <p>We hope you enjoy your time with BudgetBirdie. Good luck!</p>
         </div>
-        <div class="sidebar2">Calculator
+        <div class="sidebar2">Budgeting Tips
             <div class="box-sidebar">
-                <div class="calculator">
-                    <input type="text" id="display" disabled />
-                    <div class="buttons">
-                        <button onclick="clearDisplay()">C</button>
-                        <button onclick="appendToDisplay('7')">7</button>
-                        <button onclick="appendToDisplay('8')">8</button>
-                        <button onclick="appendToDisplay('9')">9</button>
-                        <button onclick="appendToDisplay('/')">/</button>
-                        <button onclick="appendToDisplay('4')">4</button>
-                        <button onclick="appendToDisplay('5')">5</button>
-                        <button onclick="appendToDisplay('6')">6</button>
-                        <button onclick="appendToDisplay('*')">*</button>
-                        <button onclick="appendToDisplay('1')">1</button>
-                        <button onclick="appendToDisplay('2')">2</button>
-                        <button onclick="appendToDisplay('3')">3</button>
-                        <button onclick="appendToDisplay('-')">-</button>
-                        <button onclick="appendToDisplay('0')">0</button>
-                        <button onclick="calculateResult()">=</button>
-                        <button onclick="appendToDisplay('+')">+</button>
-                    </div>
-                </div>                
+                <img src="assets/css/images/chart-50-30-20-budget.png" alt="50/30/20 Chart" style="width: 500px; height: auto;">
+                <li><strong>50% Needs:</strong> This portion covers essential expenses necessary for survival and basic living.</li>
+                
+                <li><strong>30% Wants:</strong> This category includes discretionary spending on things you desire but don’t need.</li>
+                
+                <li><strong>20% Savings:</strong> This portion is meant for building your financial security.</li>
+                
+                <li>The rule provides a straightforward framework for managing finances, helping you prioritize essentials while still allowing for enjoyment and savings. Adjustments can be made based on personal circumstances, but it's a useful starting point for budgeting.</li>                    
             </div>
         </div>
-        <script>
-        function appendToDisplay(value) {
-    document.getElementById('display').value += value;
-}
-
-function clearDisplay() {
-    document.getElementById('display').value = '';
-}
-
-function calculateResult() {
-    const display = document.getElementById('display');
-    try {
-        display.value = eval(display.value);
-    } catch {
-        display.value = 'Error';
-    }
-}
-
-    </script>    
+         
     </body>
     <footer>
+        <div class="footer">
+            <p>Copyright 2024 @ BudgetBirdie. This website was created by the BudgetBirdie team and is not used for commercial purposes.</p>
+        </div>
     </footer>
     </html>

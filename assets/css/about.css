@@ -36,6 +36,7 @@ h1, h2 {
      height: 100vh;
      padding: 10px;
      
+     
      .poppins-light {
       font-family: "Poppins", sans-serif;
       font-weight: 300;
@@ -70,6 +71,7 @@ h1, h2 {
     padding: 10px;
     margin-right: 20px;
     font-size: 24;
+    margin-bottom: 600;
   }
   .content {
     grid-area: content;
@@ -77,6 +79,8 @@ h1, h2 {
     color: black;
     padding: 10px;
     font-size: 20;
+    margin-bottom: 350px;
+    ;
   }
   
   .sidebar2 {
@@ -136,33 +140,16 @@ h1, h2 {
     place-items: center;
     height: 100px;      
   }
+  footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: -320px;
+    color:#383838;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    /* background-color: lightgreen; */
+    margin-bottom: 300px;
+  }
   
-  .calculator {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgb(16, 91, 114);
-    box-shadow: 0 0 10px rgba(161, 89, 129, 0.1);
-}
-
-input {
-    width: 100%;
-    height: 40px;
-    font-size: 24px;
-    text-align: right;
-    margin-bottom: 10px;
-    color:#030303
-}
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-button {
-    padding: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    background-color: lightgray;
-}

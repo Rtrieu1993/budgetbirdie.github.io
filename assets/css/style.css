@@ -1,4 +1,5 @@
-h1, h2 {
+h1,
+h2 {
   color: #48bdb6;
   font-family: Georgia, serif;
   font-weight: bold;
@@ -6,14 +7,15 @@ h1, h2 {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-    margin: 10px;
+  margin: 10px;
 }
+
 body {
   font-family: 'Marker Felt', fantasy;
   background-image: url(/assets/css/images/budgetbirdiebackground.jpg);
-  background-size:100%;
+  background-size: 115%;
   background-repeat: no-repeat;
-  background-position:top;
+  background-position: top;
   color: black;
   background-color: #dddddd;
   text-align: center;
@@ -21,36 +23,41 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 select {
   background-color: rgba(254, 243, 240, 0.8);
   border: 2px solid #d4e2d4;
   border-radius: 10px;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2),
-              inset 0 -2px 5px rgba(255, 255, 255, 0.5);
+    inset 0 -2px 5px rgba(255, 255, 255, 0.5);
   padding: 10px;
   font-size: 16px;
   color: #333;
   cursor: pointer;
 }
+
 select::-ms-expand {
   display: none;
 }
+
 input[type="number"],
 input[type="date"],
 select {
-    border: none;
-    border-radius: 15px;
-    background-color: rgba(212, 226, 212, 0.5);
-    padding: 10px;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
-    transition: all 0.3s;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(212, 226, 212, 0.5);
+  padding: 10px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
 }
+
 input[type="number"]:focus,
 input[type="date"]:focus,
 select:focus {
-    outline: none;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+  outline: none;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
 }
+
 button {
   border: none;
   border-radius: 20px;
@@ -62,9 +69,11 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 button:hover {
   background-color: #b0e0b0;
 }
+
 table {
   border-collapse: separate;
   border-radius: 10px;
@@ -73,20 +82,24 @@ table {
   background-color: #41bbc5;
   margin: auto;
 }
+
 thead {
   background-color: #d4e2d4;
   border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
 tbody tr {
   counter-increment: rowNumber;
 }
+
 tbody tr td:first-child::before {
   content: counter(rowNumber);
   margin-right: 10px;
   font-weight: bold;
   color: #333;
 }
+
 th {
   color: #808080;
   font-family: 'Georgia', serif;
@@ -94,11 +107,13 @@ th {
   padding: 10px;
   border-radius: 10px;
 }
+
 td {
   text-align: center;
   padding: 10px;
   color: #2f4f4f;
 }
+
 td .delete-button {
   border: none;
   border-radius: 10px;
@@ -110,20 +125,21 @@ td .delete-button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 td .delete-button:hover {
   background-color: #ff4c4c;
 }
 
 .clear-table-button {
-  border: none; 
-  border-radius: 20px; 
-  background-color: #ff6b6b; 
-  color: white; 
-  font-family: 'Marker Felt', fantasy; 
-  padding: 10px 20px; 
-  font-size: 16px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  border: none;
+  border-radius: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  font-family: 'Marker Felt', fantasy;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   display: block;
   margin: 20px auto;
 }
@@ -135,62 +151,78 @@ td .delete-button:hover {
   box-sizing: border-box;
 }
 
- body {
+body {
   display: grid;
   grid-template-areas:
-   'header header header'
-   'sidebar content sidebar2'
-   'footer footer footer';
-   grid-template-columns: 1fr 2fr 1fr;
-   grid-template-rows: auto 1fr auto;
-   gap: 20px;
-   column-gap: 20px;
-   height: 100vh;
-   padding: 10px;
-   
-   .poppins-light {
+    'header header header'
+    'sidebar content sidebar2'
+    'footer footer footer';
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  column-gap: 20px;
+  height: 100vh;
+  padding: 10px;
+
+  .poppins-light {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
   }
-  
+
   .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-  
+
   .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
   }
-  
+
 }
 
 header {
   grid-area: header;
   background-color: lightgreen;
-  margin-top: 375px;
-  text-align:justify;
+  margin-top: 18%;
+  text-align: justify;
   font-size: 24px;
 }
 
 .sidebar {
-  grid-area: sidebar;
+  list-style-type: none;
   background-color: lightgreen;
-  color: black;
   padding: 10px;
-  margin-right: 20px;
-  margin-bottom: 350;
+  margin-left: 20px;
+  font-size: 24;
+  color: #030303;
+  margin-bottom: auto;
+  text-align: center;
 }
+
+.sidebar li{
+  list-style-type: none;
+  background-color: lightgreen;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 18;
+  color: #030303;
+  margin-bottom: auto;
+  text-align: left;
+}
+
 .content {
   grid-area: content;
-  height: fit-content;
+  /* max-height: -150px; */
   background-color: lightblue;
   color: black;
   padding: 10px;
-  margin-top: 20px;
+  /* margin-top: auto; */
+  margin-bottom: auto;
+
 }
 
 .sidebar2 {
@@ -199,15 +231,17 @@ header {
   background-color: lightgreen;
   padding: 10px;
   margin-left: 20px;
-  color:#000000;
+  color: #000000;
   font-size: 24px;
+  margin-bottom: auto;
+
 }
 
-.sidebar2 div li{
-margin-bottom: 30px;
-text-align: left;
-font-family: Arial, Helvetica, sans-serif;
-font-size: auto px;
+.sidebar2 div li {
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: auto px;
 }
 
 .box-content {
@@ -229,10 +263,11 @@ font-size: auto px;
 header nav ul {
   list-style-type: none;
   padding: 0;
-  text-wrap:nowrap;
+  text-wrap: nowrap;
 }
-header nav ul li{
-  display:inline-block;
+
+header nav ul li {
+  display: inline-block;
   margin-left: auto;
 }
 
@@ -241,40 +276,39 @@ header nav ul a {
   color: black;
   padding: 30px 30vh;
   margin-right: 15px;
- background-color: none;
- text-align:center
+  background-color: none;
+  text-align: center
 }
 
 nav li a:hover {
   color: #ff5100;
-  
+
 }
 
 
 .h1c {
   display: grid;
   place-items: center;
-  height: 100px;      
+  height: 100px;
 }
 
 .h1c {
   display: grid;
   place-items: center;
-  height: 100px;      
+  height: 100px;
 }
 
 footer {
   grid-area: footer;
-  position: fixed;
-  bottom: -320px;
-  color:#383838;
-  left: 0;
-  right: 0;
+
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  padding: 10px;
-  /* background-color: lightgreen; */
-  margin-bottom: 300px;
+  color: #383838;
+
 }
+
 .calculator {
   border: 1px solid #ccc;
   padding: 20px;
@@ -289,7 +323,7 @@ input {
   font-size: 24px;
   text-align: right;
   margin-bottom: 10px;
-  color:#030303
+  color: #030303
 }
 
 .buttons {
@@ -303,5 +337,5 @@ button {
   font-size: 18px;
   cursor: pointer;
   background-color: lightgray;
-  color:black;
+  color: black;
 }

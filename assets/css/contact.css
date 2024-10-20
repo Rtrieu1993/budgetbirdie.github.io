@@ -1,7 +1,9 @@
 
 *{
-    margin: 0;
-    padding: 0;
+
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
   }
   h1, h2 {
     color: #48bdb6;
@@ -23,7 +25,6 @@
      grid-template-columns: 1fr 2fr 1fr;
      grid-template-rows: auto 1fr auto;
      gap: 20px;
-     column-gap: 20px;
      height: 100vh;
      padding: 10px;
      
@@ -110,7 +111,8 @@
   body {
     font-family: 'Marker Felt', fantasy;
     background-image: url(/assets/css/images/budgetbirdiebackground.jpg);
-    background-size:100%;
+    width: 100%;
+    background-size: 115%;
     background-repeat: no-repeat;
     background-position:top;
     color: black;
@@ -124,10 +126,9 @@
   header {
     grid-area: header;
     background-color: lightgreen;
-    margin-top: 375px;
-    text-align:justify;
+    margin-top: 18%;
+    text-align: justify;
     font-size: 24px;
-    margin-bottom: 0;
   }
   
   .sidebar {
@@ -136,14 +137,16 @@
     color: black;
     padding: 10px;
     margin-right: 20px;
+    margin-bottom: auto;
+
   }
   .content {
     grid-area: content;
-    height:auto;
+    max-height:-150;
     background-color: lightblue;
     color: black;
     padding:25px;
-    margin-top: -150px;
+    margin-bottom: auto;
   }
   
   .sidebar2 {
@@ -154,6 +157,8 @@
     margin-left: 20px;
     color:#000000;
     font-size: 24px;
+    margin-bottom: auto;
+    
   
   }
   
@@ -161,7 +166,6 @@
   margin-bottom: 30px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: auto px;
   }
   
   .box-content {
@@ -183,10 +187,11 @@
   header nav ul {
     list-style-type: none;
     padding: 0;
-    text-wrap:nowrap;
+    text-wrap: nowrap;
   }
-  header nav ul li{
-    display:inline-block;
+  
+  header nav ul li {
+    display: inline-block;
     margin-left: auto;
   }
   
@@ -195,8 +200,8 @@
     color: black;
     padding: 30px 30vh;
     margin-right: 15px;
-   background-color: none;
-   text-align:center
+    background-color: none;
+    text-align: center
   }
   
   nav li a:hover {
@@ -219,13 +224,11 @@
   
   footer {
     grid-area: footer;
-    position: fixed;
-    bottom: -320px;
-    color:#383838;
-    left: 0;
-    right: 0;
+    
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    padding: 10px;
-    /* background-color: lightgreen; */
-    margin-bottom: 300px;
+    color:#383838;
+    
   }

@@ -10,17 +10,29 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"   >Home</a><br/></li>
-                <li><a href="about.html">About</a><br/></li>
+                <li><a href="index.html">Home</a><br /></li>
+                <li><a href="about.html">About</a><br /></li>
                 <li><a href="contact.html">Contact Us</a><br></li>
             </ul>
         </nav>
     </header>
 
-    <div class="sidebar">Sidebar<div class="box-sidebar"></div>
+    <div class="sidebar" font-size=""><strong>Budgeting Tips: 50/30/20 Rule</strong><div class="box-sidebar"></div>
+        <img src="assets/css/images/chart-50-30-20-budget.png" alt="50/30/20 Chart" style="width: 500px; height: auto;">
+        <li><strong>50% Needs:</strong> This portion covers essential expenses necessary for survival and basic
+            living.</li><br/>
+
+        <li><strong>30% Wants:</strong> This category includes discretionary spending on things you desire but don’t
+            need.</li><br/>
+
+        <li><strong>20% Savings:</strong> This portion is meant for building your financial security.</li>
+
+        <li>The rule provides a straightforward framework for managing finances, helping you prioritize essentials
+            while still allowing for enjoyment and savings. Adjustments can be made based on personal circumstances,
+            but it's a useful starting point for budgeting.</li><br/>
     </div>
     <div class="content">
-        <form action = "">
+        <form action="">
             <div class="input-section">
                 <label for="category-select">Category:</label>
                 <select id="category-select" required>
@@ -49,7 +61,7 @@
                 <label for="date-input">Date:</label>
                 <input type="date" id="date-input">
                 <button id="add-btn">Add</button>
-                </div>
+            </div>
         </form>
         <div class="expenses-list"></div>
         <h2>Expenses List</h2>
@@ -69,77 +81,77 @@
         <div class="total-amount">
             <strong>Total:</strong> $<span id="total-amount">0</span>
         </div>
-    
-    <!------ Expense tracker ----- Filter Total------->
-    <div class="filter">
-        <label for="filter-category">Filter by Category:</label>
-        <select id="filter-category">
-            <option value="All">All</option>
-            <option value="Going Out To Eat">Going Out To Eat</option>
-            <option value="Groceries">Groceries</option>
-            <option value="Commute">Commute</option>
-            <option value="Personal Spending">Personal Spending</option>
-            <option value="Cell Phone Bill">Cell Phone Bill</option>
-            <option value="Rent">Rent</option>
-            <option value="Utilities">Utilities</option>
-            <option value="Car Payment">Car Payment</option>
-            <option value="Household Supplies">Household Supplies</option>
-            <option value="Leisure Activites">Leisure Activities</option>
-            <option value="Savings">Savings</option>
-            <option value="Student Loan Payment">Student Loan Payment</option>
-            <option value="Car Insurance">Car Insurance</option>
-            <option value="Renters Insurance">Renters Insurance</option>
-            <option value="Health Insurance">Health Insurance</option>
-            <option value="Investments">Investments</option>
-            <option value="Credit Card Payment">Credit Card Payment</option>
-            <option value="Streaming Services">Streaming Services</option>
-        </select>
-    </div>
+
+        <!------ Expense tracker ----- Filter Total------->
+        <div class="filter">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                <option value="Going Out To Eat">Going Out To Eat</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Commute">Commute</option>
+                <option value="Personal Spending">Personal Spending</option>
+                <option value="Cell Phone Bill">Cell Phone Bill</option>
+                <option value="Rent">Rent</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Car Payment">Car Payment</option>
+                <option value="Household Supplies">Household Supplies</option>
+                <option value="Leisure Activites">Leisure Activities</option>
+                <option value="Savings">Savings</option>
+                <option value="Student Loan Payment">Student Loan Payment</option>
+                <option value="Car Insurance">Car Insurance</option>
+                <option value="Renters Insurance">Renters Insurance</option>
+                <option value="Health Insurance">Health Insurance</option>
+                <option value="Investments">Investments</option>
+                <option value="Credit Card Payment">Credit Card Payment</option>
+                <option value="Streaming Services">Streaming Services</option>
+            </select>
+        </div>
     </div>
     <div class="sidebar2">Calculator<div class="box-sidebar">
-        <div class="calculator">
-            <input type="text" id="display" disabled />
-            <div class="buttons">
-                <button onclick="clearDisplay()">C</button>
-                <button onclick="appendToDisplay('7')">7</button>
-                <button onclick="appendToDisplay('8')">8</button>
-                <button onclick="appendToDisplay('9')">9</button>
-                <button onclick="appendToDisplay('/')">/</button>
-                <button onclick="appendToDisplay('4')">4</button>
-                <button onclick="appendToDisplay('5')">5</button>
-                <button onclick="appendToDisplay('6')">6</button>
-                <button onclick="appendToDisplay('*')">*</button>
-                <button onclick="appendToDisplay('1')">1</button>
-                <button onclick="appendToDisplay('2')">2</button>
-                <button onclick="appendToDisplay('3')">3</button>
-                <button onclick="appendToDisplay('-')">-</button>
-                <button onclick="appendToDisplay('0')">0</button>
-                <button onclick="calculateResult()">=</button>
-                <button onclick="appendToDisplay('+')">+</button>
+            <div class="calculator">
+                <input type="text" id="display" disabled />
+                <div class="buttons">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="calculateResult()">=</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                </div>
             </div>
-        </div> 
 
-    </div>
+        </div>
     </div>
     <script>
         function appendToDisplay(value) {
-    document.getElementById('display').value += value;
-}
+            document.getElementById('display').value += value;
+        }
 
-function clearDisplay() {
-    document.getElementById('display').value = '';
-}
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
 
-function calculateResult() {
-    const display = document.getElementById('display');
-    try {
-        display.value = eval(display.value);
-    } catch {
-        display.value = 'Error';
-    }
-}
+        function calculateResult() {
+            const display = document.getElementById('display');
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = 'Error';
+            }
+        }
 
-    </script>   
+    </script>
 </body>
 
 </html>
@@ -149,7 +161,8 @@ function calculateResult() {
 </head>
 <footer>
     <div class="footer">
-        <p>Copyright 2024 @ BudgetBirdie. This website was created by the BudgetBirdie team and is not used for commercial purposes.</p>
+        <p>Copyright 2024 @ BudgetBirdie. This website was created by the BudgetBirdie team and is not used for
+            commercial purposes.</p>
     </div>
 </footer>
 <div class="h1c">

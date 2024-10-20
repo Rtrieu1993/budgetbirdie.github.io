@@ -11,7 +11,7 @@ h1, h2 {
   body {
     font-family: 'Marker Felt', fantasy;
     background-image: url(/assets/css/images/budgetbirdiebackground.jpg);
-    background-size:100%;
+    background-size: 115%;
     background-repeat: no-repeat;
     background-position:top;
     color:cdfbec;
@@ -30,8 +30,8 @@ h1, h2 {
      'header header header'
      'sidebar content sidebar2'
      'footer footer footer';
-     grid-template-columns: 1fr 2fr 1fr;
-     grid-template-rows: auto 1fr auto;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto auto;
      gap: 20px;
      height: 100vh;
      padding: 10px;
@@ -60,8 +60,9 @@ h1, h2 {
   header {
     grid-area: header;
     background-color: lightgreen;
-    margin-top: 375px;
-    text-align:justify;
+    margin-top: 18%;
+    text-align: justify;
+    font-size: 24px;
   }
   
   .sidebar {
@@ -70,26 +71,52 @@ h1, h2 {
     color: black;
     padding: 10px;
     margin-right: 20px;
-    font-size: 24;
-    margin-bottom: 600;
+    font-size: 24px;
+    margin-bottom: auto;
   }
   .content {
     grid-area: content;
     background-color: lightblue;
     color: black;
     padding: 10px;
-    font-size: 20;
-    margin-bottom: 350px;
-    ;
+    font-size: 24px;
+    width: 1000px;
+    margin-bottom: auto;
+  
   }
   
-  .sidebar2 {
+  /* .sidebar2 {
+    grid-row: sidebar2;
+    list-style-type: none;
     grid-area: sidebar2;
     background-color: lightgreen;
     padding: 10px;
     margin-left: 20px;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: auto;
+  } */
+
+  .sidebar2 {
+    list-style-type: none;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-right: 20px;
     font-size: 24;
-    color:#030303;
+    color: #030303;
+    margin-bottom: auto;
+    text-align: center;
+  }
+  
+  .sidebar2 li{
+    list-style-type: none;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 18;
+    color: #030303;
+    margin-bottom: auto;
+    text-align: left;
   }
   
   .box-content {
@@ -123,7 +150,7 @@ h1, h2 {
   header nav ul a {
     text-decoration: none;
     color: black;
-    padding: 30px 30vh;
+    padding: 30vh;
     margin-right: 15px;
    background-color: none;
    text-align:center
@@ -140,16 +167,15 @@ h1, h2 {
     place-items: center;
     height: 100px;      
   }
+
   footer {
     grid-area: footer;
-    position: fixed;
-    bottom: -320px;
-    color:#383838;
-    left: 0;
-    right: 0;
+    
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    padding: 10px;
-    /* background-color: lightgreen; */
-    margin-bottom: 300px;
+    color:#383838;
+    
   }
   

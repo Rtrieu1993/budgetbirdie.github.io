@@ -3,20 +3,53 @@
     margin: 0;
     padding: 0;
   }
+  h1, h2 {
+    color: #48bdb6;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    background-color: #fffafa;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+      margin: 10px;
+  }
   
-body {
-    background: lightblue;
-    font-size: 14px;
-}
-
-  .container {
-    width: 80%;
-    margin: 50px auto;
+  body {
+    display: grid;
+    grid-template-areas:
+     'header header header'
+     'sidebar content sidebar2'
+     'footer footer footer';
+     grid-template-columns: 1fr 2fr 1fr;
+     grid-template-rows: auto 1fr auto;
+     gap: 20px;
+     column-gap: 20px;
+     height: 100vh;
+     padding: 10px;
+     
+     .poppins-light {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .poppins-medium {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    
   }
   
   .contact-box {
     background: white;
-    display: flex;
+    display:flexbox
   }
   
   .contact-left {
@@ -33,18 +66,12 @@ body {
     color: #696969;
   }
   
-  h1 {
-    margin-bottom: 10px;
-  }
-
-  .container p {
-    margin-bottom: 10px;
-  }
-  
   .input-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-left: 0;
+  
   }
 
   .input-row .input-group {
@@ -54,13 +81,12 @@ body {
   input{
     width: 100;
     border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+    outline:#000000;
   }
   
   textarea {
-    width: 100%;
+    width: 70%;
     border: 1px solid #ccc;
     outline: none;
     padding: 10px;
@@ -80,21 +106,126 @@ body {
     transition: 0.3s ease;
   }
   
-  .contact-left h3 {
-    color: #696969;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  .contact-right h3 {
-    color: #696969;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
 
-  tr td:first-child{
-    padding-right: 20px;
+  body {
+    font-family: 'Marker Felt', fantasy;
+    background-image: url(/assets/css/images/budgetbirdiebackground.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:top;
+    color: black;
+    background-color: #dddddd;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
   }
-
-  tr td:first-child{
-    padding-top: 20px;
+  
+  header {
+    grid-area: header;
+    background-color: lightgreen;
+    margin-top: 375px;
+    text-align:justify;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: lightgreen;
+    color: black;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  .content {
+    grid-area: content;
+    height:auto;
+    background-color: lightblue;
+    color: black;
+    padding:25px;
+    margin-top: -150px;
+  }
+  
+  .sidebar2 {
+    list-style-type: none;
+    grid-area: sidebar2;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-left: 20px;
+    color:#000000;
+    font-size: 24px;
+  
+  }
+  
+  .sidebar2 div li{
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: auto px;
+  }
+  
+  .box-content {
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .box-sidebar {
+    background-color: lightgreen;
+    padding: 30px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-wrap:nowrap;
+  }
+  header nav ul li{
+    display:inline-block;
+    margin-left: auto;
+  }
+  
+  header nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 30px 30vh;
+    margin-right: 15px;
+   background-color: none;
+   text-align:center
+  }
+  
+  nav li a:hover {
+    color: #ff5100;
+    
+  }
+  
+  
+  .h1c {
+    display: grid;
+    place-items: center;
+    height: 100px;      
+  }
+  
+  .h1c {
+    display: grid;
+    place-items: center;
+    height: 100px;      
+  }
+  
+  footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: -320px;
+    color:#383838;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    /* background-color: lightgreen; */
+    margin-bottom: 300px;
   }

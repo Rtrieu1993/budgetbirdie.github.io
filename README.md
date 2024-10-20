@@ -12,7 +12,43 @@ This project allowed our team to learn what is needed to collaborate on the deve
 
 ## Installation
 
-What steps?
+**Follow these steps to install BUDGET BIRDiE** <br />
+<br />
+**Installation Prerequisites** <br />
+<br />
+You will need to make sure you have the following installed <br />
+<br />
+**Visual Studio Code** <br />
+Click [here](https://code.visualstudio.com/download) to download VS Code <br />
+<br />
+**Git** <br />
+Click [here](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git) and follow the steps to download, install, and configure Git on your computer. <br />
+<br />
+**SSH Key** <br />
+Click [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for the installation process to generate your SSH key and add it to ssh-agent <br />
+<br />
+**Use the following command prompts to install BUDGET BIRDiE Repo on your computer**<br />
+<br />
+You will first need to clone the repo by entering the following code into your terminal: <br />
+<br />
+```
+$ git clone git@github.com:Rtrieu1993/budgetbirdie.github.io.git
+```
+<br />
+
+You will then want to navigate to the BUDGET BIRDiE directory with the following command:<br />
+```
+$ cd budgetbirdie.github.io
+```
+<br />
+Then open the repo in your VS Code by using the following command:<br />
+<br />
+```
+code .
+```
+<br />
+From there you can view the entire repo and all of it's content. You can also deploy the application from the HTML file in your default browser. <br />
+
 
 ## Usage
 

@@ -66,7 +66,7 @@ Navigate to the expense tracker on the home screen.
 <br />
 From there you will select the type of expense you are adding to your tracker.
 <br />
-![DataInput](assets/css/images/CategoryDropdownScreenshot.png)
+![DataInput](assets/css/images/CategoryDropdownScreenshot.PNG)
 <br />
 Once the category is selected you will enter the amount paid and the date. 
 <br />
@@ -98,8 +98,8 @@ Prishant Tiwari
 
 **BUDGET BIRDiE Features**
 <br />
-*Track your daily expenses to a table that shows the date of transaction and the amount paid.
-*Delete unecessary expenses off the table
-*Clear entire table
-*Filter by expense category
-*Calculates total amount paid for listed expenses
+*Track your daily expenses to a table that shows the date of transaction and the amount paid. <br />
+*Delete unecessary expenses off the table <br />
+*Clear entire table <br />
+*Filter by expense category <br />
+*Calculates total amount paid for listed expenses <br />

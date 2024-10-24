@@ -12,7 +12,7 @@ h2 {
 
 body {
   font-family: 'Marker Felt', fantasy;
-  background-image: url(/assets/css/images/budgetbirdiebackground.jpg);
+  background-image: url(./images/budgetbirdiebackground.jpg);
   background-size: 115%;
   background-repeat: no-repeat;
   background-position: top;
